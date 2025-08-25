@@ -9,3 +9,7 @@ class Solution:
             countS[s[i]] = 1 + countS.get(s[i], 0)
             countT[t[i]] = 1 + countT.get(t[i], 0)
         return countS == countT
+    
+#Time Complexity: O(n+m)
+#Space Complexity: O(1)
+#Where n is the length of string s and m is the length of string t
