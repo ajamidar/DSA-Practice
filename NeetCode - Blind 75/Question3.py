@@ -8,3 +8,6 @@ class Solution:
                 return [prevMap[diff], i]
             prevMap[n] = i
         return []
+
+#Time complexity: O(n)
+#Space complexity: O(n)
