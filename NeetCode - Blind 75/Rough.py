@@ -11,6 +11,7 @@ def calculate(num1, num2, operator):
     else:
         return "Invalid operator"
 
+#Setting up permission loop.
 calcPerm = True
 while calcPerm:
     num1 = float(input("Enter first number: "))
