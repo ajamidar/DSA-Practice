@@ -1,23 +1,15 @@
-#Calculation function.
-def calculate(num1, num2, operator):
-    if operator == "+":
-        return num1 + num2
-    elif operator == "-":
-        return num1 - num2
-    elif operator == "*":
-        return num1 * num2
-    elif operator == "/":
-        return num1 / num2
-    else:
-        return "Invalid operator"
+def primeFactor():
+    primeFactor = []
+    n = 56
+    i = 2
+    while i * i <= n:
+        if n % i == 0:
+            primeFactor.append(i)
+            n //= i
+        else:
+            i += 1
+    if n > 1:
+        primeFactor.append(n)
+    return (primeFactor)
 
-#Setting up permission loop.
-calcPerm = True
-while calcPerm:
-    num1 = float(input("Enter first number: "))
-    num2 = float(input("Enter second number: "))
-    operator = input("Enter operator (+, -, *, /): ")
-    result = calculate(num1, num2, operator)
-    print("Result:", result)
-    askCont = input("Do you want to continue? (yes/no): ")
-    if askCont.lower() != "yes": calcPerm = False
+print(primeFactor())
