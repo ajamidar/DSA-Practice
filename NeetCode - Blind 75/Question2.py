@@ -9,6 +9,9 @@ class Solution:
             countS[s[i]] = 1 + countS.get(s[i], 0)
             countT[t[i]] = 1 + countT.get(t[i], 0)
         return countS == countT
+
+#a = Solution()
+#print(a.isAnagram("anagram", "nagaram"))
     
 #Time Complexity: O(n+m)
 #Space Complexity: O(1)
