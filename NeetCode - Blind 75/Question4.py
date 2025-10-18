@@ -10,5 +10,8 @@ class Solution:
             res[tuple(count)].append(s)
         return list(res.values())
 
+a = Solution()
+print(a.groupAnagrams(["act","pots","tops","cat","stop","hat"]))
+
 #Time complexity: O(m*n)
 #Space complexity: O(m*n) space for the output list.
