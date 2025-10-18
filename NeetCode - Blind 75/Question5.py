@@ -7,6 +7,8 @@ class Solution:
             count[num] = 1 + count.get(num, 0)
         for num, cnt in count.items():
             freq[cnt].append(num)
+        
+        print(freq)
 
         res = []
         for i in range(len(freq) - 1, 0, -1):
