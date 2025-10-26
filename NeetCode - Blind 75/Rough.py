@@ -22,3 +22,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# Luhn Algorithm - Used to validate Tesco's clubcard numbers.
