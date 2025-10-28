@@ -14,4 +14,4 @@ print(a.twoSum([4,5,6], 10))
 
 #Time complexity: O(n)
 #Space complexity: O(n)
-#Hash map solution.
+#Hash-map solution.
