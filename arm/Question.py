@@ -37,3 +37,7 @@ for line in sys.stdin:
     # Validate the sudoku board
     result = is_valid_sudoku(digits)
     print(result)
+
+
+#Time complexity : O(1) - The size of the Sudoku board is fixed (9x9), so the operations performed are constant time.
+#Space complexity: O(1) - The space used does not scale with input size, as the board size is fixed.
